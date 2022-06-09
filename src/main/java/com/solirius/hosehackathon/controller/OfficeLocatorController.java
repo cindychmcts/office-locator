@@ -15,17 +15,12 @@ public class OfficeLocatorController {
     }
 
     @GetMapping("/locateoffice")
-    public String locateOffice(@RequestParam("latitude") double lat, @RequestParam("longitude") double lng) {
+    public String locateOffice(@RequestParam("latitude") double lat, @RequestParam("longitude") double lng,
+                               @RequestParam(name="wifi", required=false) boolean wifi,
+                               @RequestParam(name="extendedAccess", required=false) boolean extendedAccess,
+                               @RequestParam(name="kitchen", required=false) boolean kitchen,
+                               @RequestParam(name="breakArea", required=false) boolean breakArea,
+                               @RequestParam(name="petFriendly", required=false) boolean petFriendly) {
         return officeLocatorService.getOffice(lat, lng).getName();
     }
-
-//    @GetMapping("/locate-office")
-//    public String locateOffice(@RequestParam("latitude") double lat, @RequestParam("longitude") double lng,
-//                               @RequestParam(name="wifi", required=false) boolean wifi,
-//                               @RequestParam(name="extendedAccess", required=false) boolean extendedAccess,
-//                               @RequestParam(name="kitchen", required=false) boolean kitchen,
-//                               @RequestParam(name="breakArea", required=false) boolean breakArea,
-//                               @RequestParam(name="petFriendly", required=false) boolean petFriendly) {
-//        return officeLocatorService.getOffice(lat, lng).getName();
-//    }
 }
