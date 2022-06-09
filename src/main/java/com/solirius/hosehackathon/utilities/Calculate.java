@@ -1,5 +1,6 @@
 package com.solirius.hosehackathon.utilities;
 
+import java.awt.*;
 import java.time.Duration;
 
 public class Calculate {
@@ -17,6 +18,6 @@ public class Calculate {
 
     public static double distance(double lat1, double lon1, double lat2, double lon2) {
         //Calculate distance
-        return 0;
+        return Point.distance(lat1, lon1, lat2, lon2);
     }
 }
