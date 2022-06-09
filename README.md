@@ -1,7 +1,9 @@
 # office-locator
 
 Path:
+```
 /locateoffice
+```
 
 Required Param:
 | name      | type   | descriptions   |
