@@ -3,7 +3,6 @@ package com.solirius.hosehackathon.service;
 import com.solirius.hosehackathon.domain.Office;
 import com.solirius.hosehackathon.repository.OfficeRepository;
 import com.solirius.hosehackathon.utilities.Calculate;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
