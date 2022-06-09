@@ -7,4 +7,6 @@ import java.util.List;
 
 public interface OfficeRepository extends CrudRepository<Office, Long> {
     List<Office> findByLatitudeAndLongitude(long latitude, long longitude);
+    List<Office> findAll();
+
 }
