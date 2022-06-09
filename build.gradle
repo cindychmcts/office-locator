@@ -20,9 +20,6 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'junit:junit:4.12'
     runtimeOnly 'com.h2database:h2'
-
-    // https://mvnrepository.com/artifact/org.locationtech.spatial4j/spatial4j
-    implementation group: 'org.locationtech.spatial4j', name: 'spatial4j', version: '0.8'
 }
 
 tasks.named('test') {
