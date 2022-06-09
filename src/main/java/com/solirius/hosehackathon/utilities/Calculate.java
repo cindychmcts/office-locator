@@ -12,12 +12,12 @@ public class Calculate {
      */
     public static double speed(double milesDistance, Duration duration){
         //Calculate speed
-        double hour = 60L;
-        double toHours = duration.getSeconds()/hour/hour;
-        if (toHours != 0) {
-            return milesDistance/toHours;
-        } else {
+        double secondsToHour = 3600L;
+        double toHours = duration.getSeconds()/secondsToHour;
+        if (duration.isZero()) {
             return 0;
+        } else {
+            return milesDistance/toHours;
         }
     }
 
