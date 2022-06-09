@@ -25,3 +25,6 @@ dependencies {
 tasks.named('test') {
     useJUnitPlatform()
 }
+
+// https://mvnrepository.com/artifact/org.locationtech.spatial4j/spatial4j
+implementation group: 'org.locationtech.spatial4j', name: 'spatial4j', version: '0.8'
